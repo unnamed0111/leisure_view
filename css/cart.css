@@ -1,0 +1,109 @@
+#main > h2 {
+    font-size: 2em;
+    margin-bottom: 50px;
+}
+
+.prod-cnt {
+    font-size: 1.25em;    
+    margin-bottom: 20px;
+}
+
+.cart-list {
+    width: 100%;
+}
+
+.cart-list, 
+.cart-list thead th, 
+.cart-list tbody td {
+    border-collapse: collapse;
+    padding: 0;
+}
+
+/* table-head */
+.cart-list thead > tr {
+    background-color: #00a2ff;
+    color: white;
+}
+
+.cart-list thead th {
+    padding: 5px 0;
+}
+
+.cart-list thead th:first-child,
+.cart-list tbody tr td:first-child {
+    width: 30px;
+    text-align: center;
+}
+
+.cart-list thead tr th:nth-child(3) {
+    width: 20%;
+} 
+
+/* table-body */
+.cart-list tbody tr {
+    border-bottom: 1px solid lightgrey;
+}
+
+.cart-list tbody tr td:nth-child(2) {
+    padding: 10px;
+}
+
+.cart-list tbody tr td:nth-child(2) h4 {
+    margin: 0;
+}
+
+.cart-list tbody tr td:nth-child(2) time,
+.cart-list tbody tr td:nth-child(2) small {
+    font-size: 0.9em;
+    color: grey;
+}
+
+.cart-list tbody tr td:nth-child(2) ~ td {
+    text-align: center;
+}
+
+.cart-list tbody tr td:nth-child(3) input {
+    text-align: center;
+}
+
+.cart-list tbody tr:last-child {
+    border-color: black;
+    border-width: 4px;
+}
+
+.order {
+    text-align: center;
+}
+
+.order > form {
+    display: inline-block;
+    /* border: 1px solid deepskyblue;
+    border-radius: 10px; */
+    line-height: 100px;
+    padding: 0 20px;
+}
+
+.order > form > * {
+    font-size: 2em;
+}
+
+.final-price {
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.final-price span {
+    color: #00a2ff;
+}
+
+.order button {
+    margin-top: 20px;
+    font-size: 1.75em;
+    /* font-weight: bold; */
+    border: none;
+    border-radius: 10px;
+    background-color: #00a2ff;
+    padding: 10px 40px;
+    color: white;
+    cursor: pointer;
+}

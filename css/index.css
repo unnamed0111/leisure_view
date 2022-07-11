@@ -1,0 +1,364 @@
+@import url(common.css);
+
+#best-review-slide {
+    position: relative;
+    overflow: hidden;
+}
+
+#best-review-list-controller {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    margin: 163px 0;
+}
+
+#best-review-list-controller a {
+    display: block;
+}
+
+#best-review-list-controller a:nth-child(1) {
+    position: absolute;
+    left: 0;
+}
+
+#best-review-list-controller a:nth-child(2) {
+    position: absolute;
+    right: 0;
+}
+
+.review-user-name {
+    color: #a1a1a1;
+    font-size: 14px;
+    line-height: 14px;
+    margin-bottom: 14px;
+}
+
+.review-prod {
+    margin: 5px;
+}
+
+.review-prod a {
+    overflow: hidden;
+    display: block;
+}
+
+.review-prod-img {
+    float: left;
+    width: 64px; height: 64px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.review-prod-img img {
+    height: 100%;
+}
+
+.review-prod-content {
+    float: left;
+    /* width: 176px; height: 64px; */
+    width: 170px;
+    overflow: hidden;
+    margin-left: 10px
+}
+
+.review-prod-content h3 {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    height: 22px;
+    overflow: hidden;
+    color: #797979;
+    margin-bottom: 3px;
+}
+
+#category-best-list {
+    margin-top: 96px;
+}
+
+#category-best-list-controller {
+    width: 100%;
+    margin-bottom: 50px;
+    overflow: hidden;
+}
+
+#category-best-list-controller li {
+    float: left;
+    width: 20%;
+    /* height: 93px; */
+}
+
+#category-best-list-controller li button {
+    display: block;
+    overflow: hidden;
+    width: 80%; height: 93px;
+    border: 0;
+    border-radius: 5px;
+    margin-right: 20%;
+    padding: 0;
+    background-size: cover;
+}
+
+#category-best-list-controller li button:last-child {
+    margin-right: 0;
+}
+
+#category-best-list-controller li button div {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    line-height: 93px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+#promotion-list {
+    margin-top: 211px;
+}
+
+#promotion-list-container {
+    background-image: url(../img/maldives-1993704_1920.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.promotion {
+    overflow: hidden;
+    height: 522px;
+}
+
+.promotion-header {
+    float: left;
+    width: 324px; height: 100%;
+    background-color: #00ffba;
+    padding: 0 24px;
+    margin-right: 14px;
+}
+
+.promotion-header h2 {
+    margin-top: 27px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.promotion-content {
+    margin-top: 68px;
+}
+
+.promotion-content h3 {
+    font-size: 36px;
+    line-height: 36px;
+}
+
+.promotion-content p {
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.promotion-content a {
+    display: block;
+    margin-top: 40px;
+    width: 136px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 18px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.promotion-item-container {
+    float: left;
+    width: 400px; height: 100%;
+    margin: 21px 14px 21px 0;
+}
+
+.promotion-item {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.promotion-item:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.promotion-item-img {
+    overflow: hidden;
+    float: left;
+    width: 150px;
+    height: 150px;
+}
+
+.promotion-item-img img {
+    display: block;
+    height: 100%;
+}
+
+.promotion-item-content {
+    float: left;
+    width: 224px;
+    height: 106px;
+    margin: 22px 13px;
+}
+
+.promotion-item-content h3 {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    height: 44px;
+    margin-bottom: 13px;
+}
+
+.promotion-event-container {
+    float: left;
+    width: 400px; height: 100%;
+    margin-top: 21px
+}
+
+.promotion-event {
+    overflow: hidden;
+    height: 480px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.promotion-event-img {
+    height: 300px;
+}
+
+.promotion-event-content {
+    text-align: center;
+    margin: 8px 16px;
+}
+
+.promotion-event-content h3 {
+    font-size: 24px;
+    line-height: 24px;
+    margin-bottom: 18px;
+}
+
+.promotion-event-content p {
+    font-size: 16px;
+}
+
+.promotion-event-content a {
+    margin: 30px auto 0;
+    display: block;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 136px;
+    line-height: 36px;
+}
+
+#best-review-list {
+    margin-top: 190px;
+}
+
+#best-review-list-container {
+    overflow: hidden;
+    width: 1120px;
+    margin: 0 auto;
+}
+
+#best-review-list-wrapper {
+    overflow: hidden;
+    width: 200%;
+}
+
+.best-review-list-page {
+    float: left;
+    overflow: hidden;
+}
+
+.review-item {
+    float: left;
+    overflow: hidden;
+    width: 256px;
+    box-sizing: border-box;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    margin: 0 12px;
+}
+
+.review-item-img {
+    overflow: hidden;
+    height: 192px;
+}
+
+.review-item-img img {
+    display: block;
+    height: 100%;
+}
+
+.review-item-user {
+    margin: 10px 5px 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.prod-item-score {
+    margin-bottom: 12px;
+}
+
+#discount-list {
+    margin-top: 134px;
+    padding: 54px 0 80px;
+    background: linear-gradient(to right, #0000ff0f, #00ffde0f);
+}
+
+#main-banner {
+    height: 360px;
+    position: relative;
+}
+
+#main-banner-container {
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    min-width: 1200px;
+}
+
+#main-banner-wrapper {
+    width: 300%;
+}
+
+#main-banner-container li {
+    float: left;
+    width: 33.3333%;
+    min-width: 1200px;
+}
+
+#main-banner-container li a {
+    display: block;
+    height: 360px;
+    background-size: cover;
+    background-position: center;
+}
+
+#main-banner-controller {
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+#main-banner-controller-wrapper {
+    position: relative;
+    height: 73px;
+}
+
+#main-banner-controller-wrapper a {
+    position: absolute;
+    display: block;
+    margin: 143.5px 0;
+}
+
+#main-banner-controller-wrapper a:nth-child(1) {
+    left: 0;
+}
+
+#main-banner-controller-wrapper a:nth-child(2) {
+    right: 0;
+}
+
+#best-list {
+    margin-top: 85px;
+}

@@ -1,0 +1,30 @@
+/* paging-controller */
+.paging-controller {
+    text-align: center;
+    height: 32px;
+}
+
+.paging-controller>ul {
+    display: inline-block;
+}
+
+.paging-controller>ul>li {
+    float: left;
+}
+
+.paging-controller>ul>li>a {
+    display: block;
+    width: 30px;
+    line-height: 30px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.paging-controller>ul>li:not(:last-child) {
+    margin-right: 5px;
+}
+
+.paging-controller>ul>li:first-child>a,
+.paging-controller>ul>li:last-child>a {
+    width: 60px;
+}

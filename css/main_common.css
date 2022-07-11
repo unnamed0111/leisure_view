@@ -1,0 +1,23 @@
+body, h1, h2, p, img, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #000;
+}
+
+#main {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.test-hidden {
+    display: none;
+}
+
+.test-block {
+    display: block;
+    width: 100%;
+    height: 100px;
+    background-color: bisque;
+}

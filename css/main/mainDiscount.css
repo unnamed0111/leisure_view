@@ -1,0 +1,122 @@
+.main-discount {
+    background-color: #0090ff;
+    padding: 20px 0; /* (option) */
+}
+
+.main-discount > div {
+    width: 1200px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.main-discount h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 2em;
+    color: white;
+}
+
+.main-discount ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.main-discount li {
+    float: left;
+    width: calc(20% - 4px);
+    /* 8px = 10px * 0.8 */
+    overflow: hidden;
+    border-radius: 10px;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    position: relative;
+    /* box-sizing: border-box; */
+    background-color: white;
+}
+
+.main-discount li:hover::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    border: 2px solid #0090ff;
+    box-sizing: border-box;
+    pointer-events: none;
+}
+
+.main-discount li:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.main-discount li:not(:nth-child(5n)) {
+    margin-right: 5px;
+}
+
+.main-discount li:nth-child(n+6) {
+    margin-top: 5px;
+}
+
+.main-discount li>a {
+    display: block;
+}
+
+.main-discount li>a>* {
+    display: block;
+    margin: 0 0 5px 0;
+}
+
+.main-discount li>a>div:first-child {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.main-discount li>a>div:first-child~* {
+    padding: 0 10px;
+}
+
+.main-discount li>a>div:first-child img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.main-discount li>a>h3 {
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.25em;
+    height: 1.25em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.main-discount li>a>time {
+    font-size: 0.8em;
+    color: red;
+}
+
+.main-discount li>a>small:first-of-type {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: line-through;
+}
+
+.main-discount li>a>strong {
+    font-size: 1.25em;
+}
+
+.main-discount li>button {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    background: none;
+    border: none;
+}

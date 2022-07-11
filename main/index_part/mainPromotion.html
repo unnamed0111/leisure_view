@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main_common.css">
+    <style>
+        .main-promotion {
+            width: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .main-promotion h2 {
+            font-weight: normal;
+        }
+
+        .main-promotion h3 {
+            font-size: 2em;
+        }
+        
+        .main-promotion > div {
+            width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .main-promotion > div > * {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .promotion > div:first-child > * {
+            margin-bottom: 20px;
+        }
+
+        .promotion > div:first-child > p {
+            font-size: 1.5em;
+        }
+
+        .promotion > div:first-child > a {
+            display: inline-block;
+            padding: 10px;
+            border: 2px solid black;
+            font-weight: bold;
+        }
+
+        .promotion > ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+        }
+
+		.promotion > ul > li {
+			flex: 1;
+			overflow: hidden;
+		}
+
+        .promotion > ul > li:not(:last-child) {
+            margin-bottom: 20px; 
+        }
+
+        .promotion > ul > li > a {
+            display: block;
+			height: 100%;
+			padding: 10px 0;
+            background-color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main-promotion" style="background-image: url('../img/maldives-1993704_1920.jpg');">
+        <div class="promotion">
+            <div style="background-color: #00ffba;">
+                <h2>기획상품</h2>
+                <h3>여름휴가 대축제</h3>
+                <p>다가오는 여름 휴가철 최대 90% 할인받고 이벤트까지 받아서 여름을 시원하게 보내자!</p>
+                <a href="">상품 더보기</a>
+            </div>
+            <ul>
+                <li>
+                    <a href="">
+                        <div>
+                            <svg viewbox="0 0 1 1"></svg>
+                            <img src="" alt="">
+                        </div>
+                        <div>
+                            <h3>[여름휴가 이벤트 상품] 양양 서퍼 비치 서핑 이용권</h3>
+                            <small>72,000원</small>
+                            <strong>39,9000원</strong>
+                        </div>
+                    </a>
+                </li>
+                <!-- test list -->
+				<li></li>
+				<li></li>
+            </ul>
+            <div>
+                <img src="" alt="">
+                <p>
+                    <dfn>[이벤트] 여름 휴가 대축제</dfn>
+                    <span>다가오는 여름휴가철 레저몰에서 행사상품을 구매하고 리뷰를 남기면 다양한 경품과 혜택이 쏟아집니다.</span>
+                    <a href="">자세히 보기</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<h2>유저관리</h2>
+<hr>
+<div id="search">
+    <form action="">
+        <fieldset>
+            <legend>검색 조건</legend>
+            <label for="searchBox">키워드</label><input id="searchBox" type="text" placeholder="검색" />
+            <input type="hidden" name="size" value="10" />
+            <input type="hidden" name="sort" value="name" />
+        </fieldset>
+    </form>
+</div>
+<div id="result">
+    <h3>검색 결과 (30)</h3>
+    <div id="expForm">
+        <label for="sortBtn">정렬:</label>
+        <select id="sortBtn">
+            <!-- 정렬 페이지 불러올때 selected 속성 붙여서 불러오기 -->
+            <option value="name">이름순</option>
+            <option value="id">아이디순</option>
+            <option value="reg">가입일순</option>
+        </select>
+        <label for="sizeBtn">표시:</label>
+        <select id="sizeBtn">
+            <!-- 표시개수 변경 페이지 불러올때 selected 속성 붙여서 불러오기 -->
+            <option value="10">10개</option>
+            <option value="20">20개</option>
+            <option value="30">30개</option>
+        </select>
+    </div>
+    <table class="result-table">
+        <thead class="table-header">
+            <tr>
+                <th>아이디</th>
+                <th>이름</th>
+                <th>이메일</th>
+                <th>포인트</th>
+                <th>유형</th>
+                <th>가입일</th>
+            </tr>
+        </thead>
+        <tr class="table-row">
+            <td>admin</td>
+            <td>관리자0</td>
+            <td>admin@admin.cddd</td>
+            <td>0</td>
+            <td>관리자</td>
+            <td>2022-10-11</td>
+        </tr>
+    </table>
+    <div class="paging-wrapper">
+        <div class="paging">
+            <ul>
+                <li class="prev-btn"><a href="">이전</a></li>
+                <li><a href="">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="">5</a></li>
+                <li><a href="">6</a></li>
+                <li class="next-btn"><a href="">다음</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

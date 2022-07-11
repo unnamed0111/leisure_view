@@ -1,0 +1,135 @@
+.main-review {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-review h2 {
+    margin-bottom: 20px;
+    font-weight: normal;
+    font-size: 2em;
+}
+
+.main-review ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-review ul li {
+    width: calc(20% - 4px);
+    position: relative;
+    align-self: flex-start;
+}
+
+.main-review ul li:not(:nth-child(5n)) {
+    margin-right: 5px;
+}
+
+.main-review ul li::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    pointer-events: none;
+}
+
+.main-review ul li > *:not(p) {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.main-review ul li > div ~ * {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.main-review ul li > div {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+}
+
+.main-review ul li > div > img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-review ul li > small:first-of-type {
+    color: deepskyblue;
+}
+
+.main-review ul li > small:nth-of-type(2) {
+    color:rgba(0, 0, 0, 0.5);
+}
+
+.main-review ul li > p {
+    line-height: 1.25em;
+    height: 3.75em;
+    overflow: hidden;
+    word-wrap: break-word;
+    padding-bottom: 5px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.review-prod {
+    height: 64px;
+    border-radius: 4px;
+}
+
+.review-prod:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.review-prod::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.review-prod img {
+    display: block;
+    border-radius: 4px;
+    width: 64px;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    float: left;
+}
+
+.review-prod > div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.review-prod > div > * {
+    display: block;
+    margin: 0;
+    padding-left: 5px;
+    /* font-size: 1em; */
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    flex: 2;
+}
+
+.review-prod > div > *:not(small) {
+    font-size: 1em;
+}
+
+.review-prod > div > small {
+    flex: 1.5;
+    text-decoration: line-through;
+    color:rgba(0, 0, 0, 0.5);
+}

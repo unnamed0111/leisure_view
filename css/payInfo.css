@@ -1,0 +1,125 @@
+.sub-title {
+    font-size: 1.5em;
+}
+
+.money {
+    font-weight: bold;
+}
+
+#main > h2 {
+    font-size: 2em;
+    border-bottom: 4px solid black;
+    margin-bottom: 50px;
+    padding: 10px 0;
+}
+
+#main > a {
+    border: 2px solid #00a2ff;
+    border-radius: 10px;
+    color: #00a2ff;
+    display: block;
+    width: 220px;
+    font-size: 1.5em;
+    line-height: 50px;
+    text-align: center;
+    margin: 20px auto 0 auto;
+}
+
+.info {
+    margin: 0 auto;
+    width: 600px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 40px 40px;
+}
+
+.info > *:not(:last-child) {
+    margin: 0 0 20px 0;
+}
+
+.info > .sub-title {
+    text-align: center;
+}
+
+.info > h3 {
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.info > table:not(.prod-list) {
+    border-collapse: collapse;
+}
+
+.info > table:not(.prod-list) {
+    border-collapse: collapse;
+    border-top: 2px solid gray;
+    width: 100%;
+    text-align: left;
+}
+
+.info > table:not(.prod-list) tr {
+    border-bottom: 1px solid lightgrey;
+}
+
+.info > table:not(.prod-list) th {
+    width: 120px;
+    padding: 20px 10px 20px 0;
+    border-right: 1px solid lightgrey;
+    background-color: #f1f1f1;
+    text-align: right;
+    font-weight: normal;
+}
+
+.info > table:not(.prod-list) td {
+    padding-left: 20px;
+}
+
+.prod-list {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.prod-list thead tr th {
+    background-color: #00a2ff;
+    color: white;
+    padding: 5px 0;
+}
+
+.prod-list thead tr th:first-child {
+    border-top-left-radius: 10px;
+}
+
+.prod-list thead tr th:last-child {
+    border-top-right-radius: 10px;
+}
+
+.prod-list tbody tr {
+    border-bottom: 1px solid lightgrey;
+}
+
+.prod-list tbody tr td:first-child {
+    padding: 10px;
+}
+
+.prod-list tbody tr td:first-child ~ td {
+    text-align: center;
+}
+
+.prod-list tbody tr td:first-child h4 {
+    margin: 0;
+}
+
+.prod-list tbody tr td:first-child time,
+.prod-list tbody tr td:first-child small {
+    font-size: 0.9em;
+    color: grey;
+}
+
+.final-price {
+    text-align: right;
+    font-size: 2em;
+}
+
+.final-price > .money {
+    color: #00a2ff;
+}

@@ -1,0 +1,12 @@
+.filter {
+    position: absolute;
+    left: 0;
+    width: 20%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    text-indent: 20px;
+}
+
+.filter h2 {
+    margin-top: 20px;
+}

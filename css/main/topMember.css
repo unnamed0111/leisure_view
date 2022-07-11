@@ -1,0 +1,69 @@
+.top-member {
+    width: 1200px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+.top-member::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* .top-member > * {
+    line-height: 100px;
+} */
+
+.top-member > h1 {
+    float: left;
+    height: 100%;
+    position: relative;
+}
+
+.top-member > h1 > a {
+    position: absolute;
+    display: block;
+    height: 60px;
+    top: calc(50% - 30px);
+}
+
+.top-member > h1 > a > img {
+    height: 100%;
+}
+
+
+.top-member > div {
+    float: right;
+    line-height: 100px;
+}
+
+.top-member > div * {
+    color: #2fa0ff;
+}
+
+.top-member > div span {
+    position: relative;
+}
+
+.top-member > div input {
+    width: 100px;
+    line-height: 38px;
+    padding: 0;
+    border: 1px solid #2fa0ff;
+    border-radius: 20px;
+    text-indent: 40px;
+    transition: 0.5s width;
+    text-overflow: ellipsis;
+}
+
+.top-member >div span input:focus {
+    width: 200px;
+}
+
+.top-member > div span i {
+    display: block;
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    /* color: #2fa0ff; */
+}

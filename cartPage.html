@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>장바구니</title>
+    <link rel="stylesheet" href="css/main_common.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <script src="https://kit.fontawesome.com/2001324d72.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="main">
+        <h2>장바구니</h2>
+        <div class="prod-cnt">총 품목 : 2개</div>
+        <table class="cart-list">
+            <thead>
+                <tr>
+                    <th><input type="checkbox"></th>
+                    <th>상품명</th>
+                    <th>개수</th>
+                    <th>가격</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>
+                        <div>
+                            <h4>강원도 평창 스키장 이용권</h4>
+                            <time datetime="2022-10-11">예약일자 : 2022-10-11</time>
+                            <small>옵션 : 성인-주간</small>
+                        </div>
+                    </td>
+                    <td><input type="number" min="1" value="1"></td>
+                    <td>20,000원</td>
+                    <td><button type="button"><i class="fa-solid fa-trash-can"></i></button></td>
+                </tr>
+                <!--  -->
+                <tr>
+                    <td><input type="checkbox"></td>
+                    <td>
+                        <div>
+                            <h4>강원도 평창 스키장 이용권</h4>
+                            <time datetime="2022-10-11">예약일자 : 2022-10-11</time>
+                            <small>옵션 : 성인-주간</small>
+                        </div>
+                    </td>
+                    <td><input type="number" min="1" value="1"></td>
+                    <td>20,000원</td>
+                    <td><button type="button"><i class="fa-solid fa-trash-can"></i></button></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="order">
+            <form action="">
+                <span class="final-price">총 가격 : <span>39,900원</span></span>
+                <button type="submit">구매하기</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

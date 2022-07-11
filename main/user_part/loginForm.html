@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        #msg {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="/ch4/login/login" method="post">
+        <fieldset>
+            <legend>로그인</legend>
+            <p id="msg">아이디 또는 비밀번호가 틀립니다. 다시입력해주세요.</p>
+            <label for="id"><span>아이디</span></label><input id="id" name="id" type="text" placeholder="아이디를 입력해주세요"/>
+            <label for="pwd"><span>아이디</span></label><input id="pwd" name="pwd" type="password" placeholder="비밀번호를 입력해주세요"/>
+            <button>로그인</button>
+        </fieldset>
+    </form>
+</body>
+</html>

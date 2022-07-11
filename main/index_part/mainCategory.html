@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main_common.css">
+    <style>
+        .main-category div:first-of-type {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            /* justify-content: space-between; */
+            /* align-items: stretch; */
+            margin-bottom: 20px;
+        }
+
+        .main-category div:first-of-type a {
+            display: block;
+            /* padding: 20px; */
+            flex: auto;
+            line-height: 3.25em;
+            text-align: center;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.5em;
+            overflow: hidden;
+            position: relative;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;;
+        }
+        
+        .main-category div:first-of-type a:not(:last-child) {
+            margin-right: 20px;
+        }
+
+        .main-category div:first-of-type a > span {
+            position: relative;
+            z-index: 999;
+        }
+
+        .main-category div:first-of-type a::after {
+            content: "";
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .main-category div:first-of-type a:hover::after {
+            background-color: rgba(0, 0, 0, 0.75);
+        }
+
+        .main-category {
+            width: 1200px;
+            margin: 0 auto;
+        }
+    
+        .main-category h2 {
+            margin-bottom: 20px;
+            font-weight: normal;
+            font-size: 2em;
+        }
+    
+        .main-category ul::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+    
+        .main-category li {
+            float: left;
+            width: calc(20% - 4px);
+            /* 8px = 10px * 0.8 */
+            overflow: hidden;
+            /* border-radius: 10px; */
+            /* border: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid deepskyblue; */
+            position: relative;
+            /* box-sizing: border-box; */
+        }
+
+        .main-category li::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            border-bottom: 2px solid deepskyblue;
+            pointer-events: none;
+        }
+    
+        .main-category li:hover {
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+        }
+    
+        .main-category li:not(:last-child) {
+            margin-right: 5px;
+        }
+    
+        .main-category li>a {
+            display: block;
+        }
+    
+        .main-category li>a>* {
+            display: block;
+            margin: 0 0 5px 0;
+        }
+    
+        .main-category li>a>div:first-child {
+            width: 100%;
+            padding-top: 100%;
+            position: relative;
+        }
+    
+        .main-category li>a>div:first-child~* {
+            padding: 0 10px;
+        }
+    
+        .main-category li>a>div:first-child img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+    
+        .main-category li>a>h3 {
+            font-size: 1em;
+            font-weight: normal;
+            line-height: 1.25em;
+            height: 1.25em;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    
+        .main-category li>a>time {
+            font-size: 0.8em;
+            color: red;
+        }
+    
+        .main-category li>a>small:first-of-type {
+            color: rgba(0, 0, 0, 0.5);
+            text-decoration: line-through;
+        }
+    
+        .main-category li>a>strong {
+            font-size: 1.25em;
+        }
+    
+        .main-category li>button {
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            background: none;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-category">
+        <h2>인기 카테고리 상품</h2>
+        <div>
+            <a style="background-image: url('../img/big-air-1283525_1280.jpg');" href=""><span>스키</span></a>
+            <a style="background-image: url('../img/atv-4808031_1920.jpg');" href=""><span>ATV</span></a>
+            <a style="background-image: url('../img/fishing-rod-5372267_1280.jpg');" href=""><span>낚시</span></a>
+            <a style="background-image: url('../img/skydive-2717507_1280.jpg');" href=""><span>스카이다이빙</span></a>
+            <a style="background-image: url('../img/surfing-2212948_1280.jpg');" href=""><span>서핑</span></a>
+        </div>
+        <ul>
+            <li>
+                <a href="">
+                    <div><img src="../img/big-air-1283525_1280.jpg" alt=""></div>
+                    <h3>무주 스키장 입장권 주간권/야간권</h3>
+                    <time datetime="2022-10-22">할인 까지 07:00:23 남음</time>
+                    <small>43,000원</small>
+                    <strong>30,000원</strong>
+                    <small>(1,220)</small>
+                </a>
+                <button type="button">찜</button>
+                <!-- test list -->
+            </li>
+            <!-- test list -->
+            <li>
+                <a href="">
+                    <div><img src="../img/big-air-1283525_1280.jpg" alt=""></div>
+                    <h3>무주 스키장 입장권 주간권/야간권</h3>
+                    <time datetime="2022-10-22">할인 까지 07:00:23 남음</time>
+                    <small>43,000원</small>
+                    <strong>30,000원</strong>
+                    <small>(1,220)</small>
+                </a>
+                <button type="button">찜</button>
+                <!-- test list -->
+            </li>
+            <li>
+                <a href="">
+                    <div><img src="../img/big-air-1283525_1280.jpg" alt=""></div>
+                    <h3>무주 스키장 입장권 주간권/야간권</h3>
+                    <time datetime="2022-10-22">할인 까지 07:00:23 남음</time>
+                    <small>43,000원</small>
+                    <strong>30,000원</strong>
+                    <small>(1,220)</small>
+                </a>
+                <button type="button">찜</button>
+                <!-- test list -->
+            </li>
+            <li>
+                <a href="">
+                    <div><img src="../img/big-air-1283525_1280.jpg" alt=""></div>
+                    <h3>무주 스키장 입장권 주간권/야간권</h3>
+                    <time datetime="2022-10-22">할인 까지 07:00:23 남음</time>
+                    <small>43,000원</small>
+                    <strong>30,000원</strong>
+                    <small>(1,220)</small>
+                </a>
+                <button type="button">찜</button>
+                <!-- test list -->
+            </li>
+            <li>
+                <a href="">
+                    <div><img src="../img/big-air-1283525_1280.jpg" alt=""></div>
+                    <h3>무주 스키장 입장권 주간권/야간권</h3>
+                    <time datetime="2022-10-22">할인 까지 07:00:23 남음</time>
+                    <small>43,000원</small>
+                    <strong>30,000원</strong>
+                    <small>(1,220)</small>
+                </a>
+                <button type="button">찜</button>
+                <!-- test list -->
+            </li>
+        </ul>
+    </div>
+</body>
+</html>

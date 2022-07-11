@@ -1,0 +1,17 @@
+@import url(main/topUser.css);
+@import url(main/topMember.css);
+@import url(main/top-nav.css);
+@import url(main/mainBanner.css);
+@import url(main/mainTopProd.css);
+@import url(main/mainDiscount.css);
+@import url(main/mainCategory.css);
+@import url(main/mainReview.css);
+
+body > * {
+    min-width: 1200px;
+}
+
+.main-banner ~ * {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}

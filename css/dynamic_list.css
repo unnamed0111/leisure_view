@@ -1,0 +1,35 @@
+* {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+#area {
+    text-align: center;
+}
+
+#list-container {
+    display: inline-block;
+    overflow: hidden;
+}
+
+#list-container li {
+    float: left;
+    /* display: inline; */
+}
+
+#list-container li a {
+    display: block;
+    padding: 5px 5px;
+    line-height: 30px;
+    transition: padding 0.3s;
+    background-color: blue;
+    color: white;
+}
+
+#list-container li a:hover {
+    padding: 5px 20px;
+    background-color: chocolate;
+}

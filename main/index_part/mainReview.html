@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/main_common.css">
+    <style>
+        .main-review {
+            width: 1200px;
+            margin: 0 auto;
+        }
+
+        .main-review h2 {
+            margin-bottom: 20px;
+            font-weight: normal;
+            font-size: 2em;
+        }
+
+        .main-review ul {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .main-review ul li {
+            width: calc(20% - 4px);
+            position: relative;
+            align-self: flex-start;
+        }
+
+        .main-review ul li:not(:nth-child(5n)) {
+            margin-right: 5px;
+        }
+
+        .main-review ul li::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            box-sizing: border-box;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            pointer-events: none;
+        }
+
+        .main-review ul li > *:not(p) {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .main-review ul li > div ~ * {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+
+        .main-review ul li > div {
+            width: 100%;
+            padding-top: 100%;
+            position: relative;
+        }
+
+        .main-review ul li > div > img {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .main-review ul li > small:first-of-type {
+            color: deepskyblue;
+        }
+
+        .main-review ul li > small:nth-of-type(2) {
+            color:rgba(0, 0, 0, 0.5);
+        }
+
+        .main-review ul li > p {
+            line-height: 1.25em;
+            height: 3.75em;
+            overflow: hidden;
+            word-wrap: break-word;
+            padding-bottom: 5px;
+            margin-bottom: 4px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .review-prod {
+            height: 64px;
+            border-radius: 4px;
+        }
+
+        .review-prod:hover {
+            background-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .review-prod::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .review-prod img {
+            display: block;
+            border-radius: 4px;
+            width: 64px;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            float: left;
+        }
+
+        .review-prod > div {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .review-prod > div > * {
+            display: block;
+            margin: 0;
+            padding-left: 5px;
+            /* font-size: 1em; */
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            flex: 2;
+        }
+
+        .review-prod > div > *:not(small) {
+            font-size: 1em;
+        }
+
+        .review-prod > div > small {
+            flex: 1.5;
+            text-decoration: line-through;
+            color:rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="main-review">
+        <h2>회원님들의 BEST 리뷰</h2>
+        <ul>
+            <li>
+                <div><img src="../img/extreme-5497194_1280.jpg" alt=""></div>
+                <small>별점</small>
+                <small>kimp****님</small>
+                <p>강사분이 친절하시고 자유시간에도 틈틈히 잘 가르쳐주시네요.</p>
+                <a class="review-prod" href="" title="무주 스키장 입장권 주간권/야간권">
+                    <img src="../img/surfing-817968_1280.jpg" alt="">
+                    <div>
+                        <h3>무주 스키장 입장권 주간권/야간권</h3>
+                        <small>49,900원</small>
+                        <strong>30,0000원</strong>
+                    </div>
+                </a>
+            </li>
+            <!-- test list -->
+        </ul>
+    </div>
+</body>
+</html>

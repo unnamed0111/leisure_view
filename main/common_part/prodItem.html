@@ -1,0 +1,29 @@
+<!-- item -->
+<li>
+    <article class="prod-item">
+        <a href="/ch4?pn={prod.pno}" class="prod-item-click-area">
+            <div class="prod-item-img">
+                <img src="{prod.img.dir}" alt="">
+            </div>
+            <div class="prod-content">
+                <h3 class="prod-title">{prod.title}</h3>
+                <p class="prod-sale-count">{prod.isSale ? prod.saleDate + "남음" : prod.label}</p>
+                <p class="prod-price-origin">{prod.price}</p>
+                <p class="prod-price-sale">{prod.salePrice}</p>
+                <div class="prod-item-score">
+                    <div>
+                        <ul>
+                            <li><img src="img/star-solid.svg" alt=""></li>
+                            <li><img src="img/star-solid.svg" alt=""></li>
+                            <li><img src="img/star-solid.svg" alt=""></li>
+                            <li><img src="img/star-solid.svg" alt=""></li>
+                            <li><img src="img/star-half-solid.svg" alt=""></li>
+                        </ul>
+                    </div>
+                    <div class="prod-item-score-number">{reviewCount}</div>
+                </div>
+            </div>
+        </a>
+        <button class="prod-item-fav-btn {user.}"><span class="hidden">찜</span></button>
+    </article>
+</li>

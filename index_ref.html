@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레저몰</title>
+    <!-- <link rel="stylesheet" href="css/common.css"> -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 헤더
+        홈버튼,
+        로그인, 회원가입, 고객센터
+        마이페이지, 장바구니, 검색
+    -->
+    <header id="top-header">
+        <!-- 회원메뉴 -->
+        <div id="member-menu-container">
+            <div id="member-menu-wrapper" class="std-width">
+                <div id="member-menu-list">
+                    <ul>
+                        <li><a href="">로그인</a></li>
+                        <li><a href="">회원가입</a></li>
+                        <li><a href="">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- 홈버튼 -->
+        <div id="customer-menu-container" class="std-width">
+            <h1><a href=""><img src="img/main_logo.svg" alt="홈버튼"></a></h1>
+            <div id="customer-menu">
+                <ul>
+                    <li>
+                        <form id="searchBox" action="">
+                            <input name="search" type="text" placeholder="검색">
+                            <button><span class="hidden">검색</span></button>
+                        </form>
+                    </li>
+                    <li><a id="userBtn" class="icon-user" href=""><span class="hidden">마이페이지</span></a></li>
+                    <li><a id="cartBtn" class="icon-cart"a href=""><span class="hidden">장바구니</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- 네비게이션
+        카테고리
+            ㄴ자전거/스케이트보드
+            ㄴ승마
+            ㄴ스키/보드
+            ㄴ구기류
+                ㄴ골프
+                ㄴ농구
+                ㄴ축구
+                ㄴ야구
+                ㄴ볼링
+            ㄴ항공레포츠
+                ㄴ스카이다이빙
+                ㄴ글라이딩
+            ㄴ서바이벌
+            ㄴ수상레포츠
+                ㄴ보트/래프팅
+                ㄴ서핑/수상스키
+                ㄴ스쿠버다이빙
+            ㄴ산악레포츠
+            ㄴ테마파크
+            ㄴ워터파크(NEW)
+        퀵메뉴
+            ㄴ스키
+            ㄴ워터파크
+            ㄴ캠핑
+            ㄴ패러글라이딩
+            ㄴ스쿠버다이빙
+            ㄴ이벤트
+    -->
+    <hr>
+    <!-- 카테고리/퀵메뉴 -->
+    <div id="category-container">
+        <div class="std-width">
+            <!-- 카테고리 -->
+            <nav id="category-nav">
+                <div id="category-btn">
+                    <div id="category-logo" class="icon-category"></div>
+                    <h2>카테고리</h2>
+                </div>
+                <div id="category-list">
+                    <ul>
+                        <li><a href="">자전거/스케이트보드</a></li>
+                        <li><a href="">승마</a></li>
+                        <li><a href="">스키/보드</a></li>
+                        <li>
+                            <a href="">구기류</a>
+                            <div class="category-sub-list">
+                                <ul>
+                                    <li><a href="">골프</a></li>
+                                    <li><a href="">농구</a></li>
+                                    <li><a href="">축구</a></li>
+                                    <li><a href="">야구</a></li>
+                                    <li><a href="">볼링</a></li>
+                                    <li><a href="">기타</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">항공레포츠</a>
+                            <div class="category-sub-list">
+                                <ul>
+                                    <li><a href="">스카이다이빙</a></li>
+                                    <li><a href="">글라이딩</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">서바이벌</a></li>
+                        <li>
+                            <a href="">수상레포츠</a>
+                            <div class="category-sub-list">
+                                <ul>
+                                    <li><a href="">보트/래프팅</a></li>
+                                    <li><a href="">서핑/수상스키</a></li>
+                                    <li><a href="">스쿠버다이빙</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li><a href="">산악레포츠</a></li>
+                        <li><a href="">테마파크</a></li>
+                        <li><a href="">워터파크</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- 퀵메뉴 -->
+            <nav id="quick-nav">
+                <h2 class="hidden">퀵메뉴</h2>
+                <div id="quick-list">
+                    <ul>
+                        <li><a href="">스키</a></li>
+                        <li><a href="">워터파크</a></li>
+                        <li><a href="">캠핑</a></li>
+                        <li><a href="">패러글라이딩</a></li>
+                        <li><a href="">스쿠버다이빙</a></li>
+                        <li><a href=""><span class="font-bold">이벤트</span></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <hr>
+    <!-- 배너
+        배너컨테너
+            ㄴ배너1,2,3..
+        배너버튼
+        배너포지션버튼
+    -->
+    <div id="main-banner">
+        <div id="main-banner-container">
+            <div id="main-banner-wrapper">
+                <ul>
+                    <li><a href="" style="background-image: url(img/test_banner.png);"><span class="hidden">배너1</span></a></li>
+                    <li><a href="" style="background-image: url(img/test_banner2.png);"><span class="hidden">배너2</span></a></li>
+                    <li><a href="" style="background-image: url(img/test_banner3.png);"><span class="hidden">배너3</span></a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="main-banner-controller">
+            <div id="main-banner-controller-wrapper" class="std-width">
+                <a class="slide-btn-1 trf-horz" href=""></a>
+                <a class="slide-btn-1" href=""></a>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- 최근 인기있는 상품 section
+        상품컨테이너
+            ㄴ상품1,2,3...
+                ㄴ상품사진
+                ㄴ상품이름
+                ㄴ상품할인
+                ㄴ상품가격
+                ㄴ평점
+                ㄴ찜버튼
+    -->
+    <section id="best-list">
+        <div class="std-width">
+            <h2 class="section-title">최근 인기있는 상품</h2>
+            <div id="best-list-container" class="prod-container">
+                <ul>
+                    <!-- item1 -->
+                    <li>
+                        <article class="prod-item">
+                            <a href="" class="prod-item-click-area">
+                                <div class="prod-item-img">
+                                    <img src="img/ski.jpg" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                    <p class="prod-sale-count">07:00:23 남음</p>
+                                    <p class="prod-price-origin">43,000원</p>
+                                    <p class="prod-price-sale">30,000원</p>
+                                    <div class="prod-item-score">
+                                        <div>
+                                            <ul>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-half-solid.svg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-item-score-number">(1,223)</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                        </article>
+                    </li>
+                    <!-- item2 -->
+                    <li>
+                        <article class="prod-item">
+                            <a href="" class="prod-item-click-area">
+                                <div class="prod-item-img">
+                                    <img src="img/ski.jpg" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                    <p class="prod-sale-count">07:00:23 남음</p>
+                                    <p class="prod-price-origin">43,000원</p>
+                                    <p class="prod-price-sale">30,000원</p>
+                                    <div class="prod-item-score">
+                                        <div>
+                                            <ul>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-half-solid.svg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-item-score-number">(1,223)</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                        </article>
+                    </li>
+                    <!-- item3 -->
+                    <li>
+                        <article class="prod-item">
+                            <a href="" class="prod-item-click-area">
+                                <div class="prod-item-img">
+                                    <img src="img/ski.jpg" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                    <p class="prod-sale-count">07:00:23 남음</p>
+                                    <p class="prod-price-origin">43,000원</p>
+                                    <p class="prod-price-sale">30,000원</p>
+                                    <div class="prod-item-score">
+                                        <div>
+                                            <ul>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-half-solid.svg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-item-score-number">(1,223)</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                        </article>
+                    </li>
+                    <!-- item4 -->
+                    <li>
+                        <article class="prod-item">
+                            <a href="" class="prod-item-click-area">
+                                <div class="prod-item-img">
+                                    <img src="img/ski.jpg" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                    <p class="prod-sale-count">07:00:23 남음</p>
+                                    <p class="prod-price-origin">43,000원</p>
+                                    <p class="prod-price-sale">30,000원</p>
+                                    <div class="prod-item-score">
+                                        <div>
+                                            <ul>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-half-solid.svg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-item-score-number">(1,223)</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- 특별할인 상품 section
+        상품컨테이너
+            ㄴ상품1,2,3...
+                ㄴ상품사진
+                ㄴ상품이름
+                ㄴ할인남은시간
+                ㄴ상품할인
+                ㄴ상품가격
+                ㄴ평점
+                ㄴ찜버튼
+     -->
+    <section id="discount-list">
+        <div class="std-width">
+            <h2 class="section-title">특별 할인 상품들</h2>
+            <div id="discount-list-container" class="prod-container">
+                <!-- item1 -->
+                <ul>
+                    <!-- item1 -->
+                    <li>
+                        <article class="prod-item no-border">
+                            <a href="" class="prod-item-click-area">
+                                <div class="prod-item-img">
+                                    <img src="img/ski.jpg" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                    <p class="prod-sale-count">07:00:23 남음</p>
+                                    <p class="prod-price-origin">43,000원</p>
+                                    <p class="prod-price-sale">30,000원</p>
+                                    <div class="prod-item-score">
+                                        <div>
+                                            <ul>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-half-solid.svg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-item-score-number">(1,223)</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                        </article>
+                    </li>
+                    <!-- item2 -->
+                    <li>
+                        <article class="prod-item no-border">
+                            <a href="" class="prod-item-click-area">
+                                <div class="prod-item-img">
+                                    <img src="img/ski.jpg" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                    <p class="prod-sale-count">07:00:23 남음</p>
+                                    <p class="prod-price-origin">43,000원</p>
+                                    <p class="prod-price-sale">30,000원</p>
+                                    <div class="prod-item-score">
+                                        <div>
+                                            <ul>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-half-solid.svg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-item-score-number">(1,223)</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                        </article>
+                    </li>
+                    <!-- item3 -->
+                    <li>
+                        <article class="prod-item no-border">
+                            <a href="" class="prod-item-click-area">
+                                <div class="prod-item-img">
+                                    <img src="img/ski.jpg" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                    <p class="prod-sale-count">07:00:23 남음</p>
+                                    <p class="prod-price-origin">43,000원</p>
+                                    <p class="prod-price-sale">30,000원</p>
+                                    <div class="prod-item-score">
+                                        <div>
+                                            <ul>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-half-solid.svg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-item-score-number">(1,223)</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                        </article>
+                    </li>
+                    <!-- item4 -->
+                    <li>
+                        <article class="prod-item no-border">
+                            <a href="" class="prod-item-click-area">
+                                <div class="prod-item-img">
+                                    <img src="img/ski.jpg" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                    <p class="prod-sale-count">07:00:23 남음</p>
+                                    <p class="prod-price-origin">43,000원</p>
+                                    <p class="prod-price-sale">30,000원</p>
+                                    <div class="prod-item-score">
+                                        <div>
+                                            <ul>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-half-solid.svg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-item-score-number">(1,223)</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                        </article>
+                    </li>
+                    <!-- item5 -->
+                    <li>
+                        <article class="prod-item no-border">
+                            <a href="" class="prod-item-click-area">
+                                <div class="prod-item-img">
+                                    <img src="img/ski.jpg" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                    <p class="prod-sale-count">07:00:23 남음</p>
+                                    <p class="prod-price-origin">43,000원</p>
+                                    <p class="prod-price-sale">30,000원</p>
+                                    <div class="prod-item-score">
+                                        <div>
+                                            <ul>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-half-solid.svg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-item-score-number">(1,223)</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                        </article>
+                    </li>
+                    <!-- item6 -->
+                    <li>
+                        <article class="prod-item no-border">
+                            <a href="" class="prod-item-click-area">
+                                <div class="prod-item-img">
+                                    <img src="img/ski.jpg" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                    <p class="prod-sale-count">07:00:23 남음</p>
+                                    <p class="prod-price-origin">43,000원</p>
+                                    <p class="prod-price-sale">30,000원</p>
+                                    <div class="prod-item-score">
+                                        <div>
+                                            <ul>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-half-solid.svg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-item-score-number">(1,223)</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                        </article>
+                    </li>
+                    <!-- item7 -->
+                    <li>
+                        <article class="prod-item no-border">
+                            <a href="" class="prod-item-click-area">
+                                <div class="prod-item-img">
+                                    <img src="img/ski.jpg" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                    <p class="prod-sale-count">07:00:23 남음</p>
+                                    <p class="prod-price-origin">43,000원</p>
+                                    <p class="prod-price-sale">30,000원</p>
+                                    <div class="prod-item-score">
+                                        <div>
+                                            <ul>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-half-solid.svg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-item-score-number">(1,223)</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                        </article>
+                    </li>
+                    <!-- item8 -->
+                    <li>
+                        <article class="prod-item no-border">
+                            <a href="" class="prod-item-click-area">
+                                <div class="prod-item-img">
+                                    <img src="img/ski.jpg" alt="">
+                                </div>
+                                <div class="prod-content">
+                                    <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                    <p class="prod-sale-count">07:00:23 남음</p>
+                                    <p class="prod-price-origin">43,000원</p>
+                                    <p class="prod-price-sale">30,000원</p>
+                                    <div class="prod-item-score">
+                                        <div>
+                                            <ul>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-solid.svg" alt=""></li>
+                                                <li><img src="img/star-half-solid.svg" alt=""></li>
+                                            </ul>
+                                        </div>
+                                        <div class="prod-item-score-number">(1,223)</div>
+                                    </div>
+                                </div>
+                            </a>
+                            <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                        </article>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- 레저별 인기 상품 section
+            카테고리 컨테이너
+                ㄴ카테고리버튼(스키,ATV,낚시,스카이다이빙,서핑)
+                    ㄴ사진
+                    ㄴ제목
+            상품컨테이너
+                ㄴ상품1,2,3...
+                    ㄴ상품사진
+                    ㄴ상품이름
+                    ㄴ할인남은시간
+                    ㄴ상품할인
+                    ㄴ상품가격
+                    ㄴ평점
+                    ㄴ찜버튼
+         -->
+        <section id="category-best-list">
+            <div class="std-width">
+                <h2 class="section-title">레저별 인기 상품</h2>
+                <div id="category-best-list-controller">
+                    <!-- 버튼누르면 ajax처리로 해당 카테고리의 인기순으로 가져오기 -->
+                    <ul>
+                        <!-- 배경은 jsp에서 css덮어쓰기 해야함 -->
+                        <li><button style="background-image: url(img/big-air-1283525_1280.jpg);"><div>스키</div></button></li>
+                        <li><button style="background-image: url(img/atv-4808031_1920.jpg);"><div>ATV</div></button></li>
+                        <li><button style="background-image: url(img/fishing-rod-5372267_1280.jpg);"><div>낚시</div></button></li>
+                        <li><button style="background-image: url(img/skydive-2717507_1280.jpg);"><div>스카이다이빙</div></button></li>
+                        <li><button style="background-image: url(img/surfing-2212948_1280.jpg);"><div>서핑</div></button></li>
+                    </ul>
+                </div>
+                <div id="category-best-list-container" class="prod-container">
+                    <ul>
+                        <!-- item1 -->
+                        <li>
+                            <article class="prod-item">
+                                <a href="" class="prod-item-click-area">
+                                    <div class="prod-item-img">
+                                        <img src="img/ski.jpg" alt="">
+                                    </div>
+                                    <div class="prod-content">
+                                        <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                        <p class="prod-sale-count">07:00:23 남음</p>
+                                        <p class="prod-price-origin">43,000원</p>
+                                        <p class="prod-price-sale">30,000원</p>
+                                        <div class="prod-item-score">
+                                            <div>
+                                                <ul>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-half-solid.svg" alt=""></li>
+                                                </ul>
+                                            </div>
+                                            <div class="prod-item-score-number">(1,223)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                            </article>
+                        </li>
+                        <!-- item2 -->
+                        <li>
+                            <article class="prod-item">
+                                <a href="" class="prod-item-click-area">
+                                    <div class="prod-item-img">
+                                        <img src="img/ski.jpg" alt="">
+                                    </div>
+                                    <div class="prod-content">
+                                        <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                        <p class="prod-sale-count">07:00:23 남음</p>
+                                        <p class="prod-price-origin">43,000원</p>
+                                        <p class="prod-price-sale">30,000원</p>
+                                        <div class="prod-item-score">
+                                            <div>
+                                                <ul>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-half-solid.svg" alt=""></li>
+                                                </ul>
+                                            </div>
+                                            <div class="prod-item-score-number">(1,223)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                            </article>
+                        </li>
+                        <!-- item3 -->
+                        <li>
+                            <article class="prod-item">
+                                <a href="" class="prod-item-click-area">
+                                    <div class="prod-item-img">
+                                        <img src="img/ski.jpg" alt="">
+                                    </div>
+                                    <div class="prod-content">
+                                        <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                        <p class="prod-sale-count">07:00:23 남음</p>
+                                        <p class="prod-price-origin">43,000원</p>
+                                        <p class="prod-price-sale">30,000원</p>
+                                        <div class="prod-item-score">
+                                            <div>
+                                                <ul>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-half-solid.svg" alt=""></li>
+                                                </ul>
+                                            </div>
+                                            <div class="prod-item-score-number">(1,223)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                            </article>
+                        </li>
+                        <!-- item4 -->
+                        <li>
+                            <article class="prod-item">
+                                <a href="" class="prod-item-click-area">
+                                    <div class="prod-item-img">
+                                        <img src="img/ski.jpg" alt="">
+                                    </div>
+                                    <div class="prod-content">
+                                        <h3 class="prod-title">무주 스키장 입장권 주간권/야간권</h3>
+                                        <p class="prod-sale-count">07:00:23 남음</p>
+                                        <p class="prod-price-origin">43,000원</p>
+                                        <p class="prod-price-sale">30,000원</p>
+                                        <div class="prod-item-score">
+                                            <div>
+                                                <ul>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                    <li><img src="img/star-half-solid.svg" alt=""></li>
+                                                </ul>
+                                            </div>
+                                            <div class="prod-item-score-number">(1,223)</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <button class="prod-item-fav-btn"><span class="hidden">찜</span></button>
+                            </article>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr>
+         <!-- 기획전 상품 section
+            기획전 컨테이너
+                ㄴ배경사진
+                ㄴ기획설명
+                    ㄴ기획이름
+                    ㄴ짧은설명
+                    ㄴ상품더보기버튼
+                ㄴ기획상품컨테이너
+                    ㄴ상품1,2,3...
+                        ㄴ상품사진
+                        ㄴ상품이름
+                        ㄴ상품할인
+                        ㄴ상품가격
+                ㄴ이벤트컨테이너
+                    ㄴ이벤트사진
+                    ㄴ이벤트타이틀
+                    ㄴ이벤트홍보문구
+                    ㄴ이벤트바로가기버튼
+        -->
+        <!-- 배경사진은 jsp에서 css 덮어쓰기 해야함 -->
+        <section id="promotion-list">
+            <div id="promotion-list-container">
+                <!-- promotion-width = std-width + 양옆margin(문서너비맞게) -->
+                <div class="promotion std-width">
+                    <!-- 타이틀/설명 -->
+                    <div class="promotion-header">
+                        <h2>기획상품</h2>
+                        <article class="promotion-content">
+                            <h3>여름휴가 대축제</h3>
+                            <p>다가오는 여름 휴가철 최대 90% 할인받고 이벤트까지 받아서 여름을 시원하게 보내자!</p>
+                            <a href="">상품 더보기</a>
+                        </article>
+                    </div>
+                    <!-- 상품리스트 -->
+                    <div class="promotion-item-container">
+                        <article class="promotion-item">
+                            <a href="">
+                                <div class="promotion-item-img">
+                                    <img src="img/surfing-2212948_1280.jpg" alt="">
+                                </div>
+                                <div class="promotion-item-content">
+                                    <h3>[여름휴가대축제] 양양 서퍼비치 서핑이용권(주간권)</h3>
+                                    <p class="prod-price-origin">72,000원</p>
+                                    <p class="prod-price-sale">39,900원</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="promotion-item">
+                            <a href="">
+                                <div class="promotion-item-img">
+                                    <img src="img/surfing-2212948_1280.jpg" alt="">
+                                </div>
+                                <div class="promotion-item-content">
+                                    <h3>[여름휴가대축제] 양양 서퍼비치 서핑이용권(주간권)</h3>
+                                    <p class="prod-price-origin">72,000원</p>
+                                    <p class="prod-price-sale">39,900원</p>
+                                </div>
+                            </a>
+                        </article>
+                        <article class="promotion-item">
+                            <a href="">
+                                <div class="promotion-item-img">
+                                    <img src="img/surfing-2212948_1280.jpg" alt="">
+                                </div>
+                                <div class="promotion-item-content">
+                                    <h3>[여름휴가대축제] 양양 서퍼비치 서핑이용권(주간권)</h3>
+                                    <p class="prod-price-origin">72,000원</p>
+                                    <p class="prod-price-sale">39,900원</p>
+                                </div>
+                            </a>
+                        </article>
+                    </div>
+                    <!-- 이벤트 -->
+                    <div class="promotion-event-container">
+                        <article class="promotion-event">
+                            <div class="promotion-event-img">
+                                <img src="img/event_img.png" alt="">
+                            </div>
+                            <div class="promotion-event-content">
+                                <h3>[이벤트] 여름휴가 대축제</h3>
+                                <p>다가오는 여름휴가철 레저몰에서 행사상품을 구매하고 리뷰를 남기면 다양한 경품과 혜택이 쏟아집니다!!</p>
+                                <a href="">이벤트 보기</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <hr>
+        <!-- 회원님들의 BEST 리뷰 section
+            리뷰컨테이너
+                ㄴ스크롤버튼
+                ㄴ리뷰1,2,3..
+                    ㄴ리뷰사진
+                    ㄴ평점
+                    ㄴ리뷰어아이디 or 이름
+                    ㄴ리뷰내용
+                    ㄴ해당상품 바로가기
+                        ㄴ상품사진
+                        ㄴ상품이름
+                        ㄴ상품할인
+                        ㄴ상품가격
+        -->
+        <section id="best-review-list">
+            <div class="std-width">
+                <h2 class="section-title">회원님들의 BEST 리뷰</h2>
+                <!-- 리뷰 페이지 관리 -->
+                <div id="best-review-slide">
+                    <div id="best-review-list-container">
+                        <div id="best-review-list-wrapper">
+                            <ul>
+                                <!-- 리뷰 1페이지 -->
+                                <li>
+                                    <div class="best-review-list-page">
+                                        <ul>
+                                            <li>
+                                                <!-- 리뷰(영역) -->
+                                                <div class="review-item">
+                                                    <!-- 리뷰사진 영역 -->
+                                                    <div class="review-item-img">
+                                                        <img src="img/extreme-5497194_1280.jpg" alt="">
+                                                    </div>
+                                                    <!-- 사용자리뷰 -->
+                                                    <div class="review-item-user">
+                                                        <!-- 평점영역 -->
+                                                        <div class="prod-item-score">
+                                                            <div>
+                                                                <ul>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <p class="review-user-name">asdf***</p>
+                                                        <p class="review-user-content">강사분이 친절하시고 자유시간에도 틈틈히 잘 가르쳐주시네요.</p>
+                                                    </div>
+                                                    <!-- 해당 상품 -->
+                                                    <article class="review-prod">
+                                                        <a href="">
+                                                            <div class="review-prod-img">
+                                                                <img src="img/surfing-817968_1280.jpg" alt="">
+                                                            </div>
+                                                            <div class="review-prod-content">
+                                                                <h3>무주스키장 입장권 주간권/야간권</h3>
+                                                                <p class="prod-price-origin-s">43,000원</p>
+                                                                <p class="prod-price-sale-s">30,000원</p>
+                                                            </div>
+                                                        </a>
+                                                    </article>
+                                                </div>
+                                                <div class="review-item">
+                                                    <!-- 리뷰사진 영역 -->
+                                                    <div class="review-item-img">
+                                                        <img src="img/extreme-5497194_1280.jpg" alt="">
+                                                    </div>
+                                                    <!-- 사용자리뷰 -->
+                                                    <div class="review-item-user">
+                                                        <!-- 평점영역 -->
+                                                        <div class="prod-item-score">
+                                                            <div>
+                                                                <ul>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <p class="review-user-name">asdf***</p>
+                                                        <p class="review-user-content">강사분이 친절하시고 자유시간에도 틈틈히 잘 가르쳐주시네요.</p>
+                                                    </div>
+                                                    <!-- 해당 상품 -->
+                                                    <article class="review-prod">
+                                                        <a href="">
+                                                            <div class="review-prod-img">
+                                                                <img src="img/surfing-817968_1280.jpg" alt="">
+                                                            </div>
+                                                            <div class="review-prod-content">
+                                                                <h3>무주스키장 입장권 주간권/야간권</h3>
+                                                                <p class="prod-price-origin-s">43,000원</p>
+                                                                <p class="prod-price-sale-s">30,000원</p>
+                                                            </div>
+                                                        </a>
+                                                    </article>
+                                                </div>
+                                                <div class="review-item">
+                                                    <!-- 리뷰사진 영역 -->
+                                                    <div class="review-item-img">
+                                                        <img src="img/extreme-5497194_1280.jpg" alt="">
+                                                    </div>
+                                                    <!-- 사용자리뷰 -->
+                                                    <div class="review-item-user">
+                                                        <!-- 평점영역 -->
+                                                        <div class="prod-item-score">
+                                                            <div>
+                                                                <ul>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <p class="review-user-name">asdf***</p>
+                                                        <p class="review-user-content">강사분이 친절하시고 자유시간에도 틈틈히 잘 가르쳐주시네요.</p>
+                                                    </div>
+                                                    <!-- 해당 상품 -->
+                                                    <article class="review-prod">
+                                                        <a href="">
+                                                            <div class="review-prod-img">
+                                                                <img src="img/surfing-817968_1280.jpg" alt="">
+                                                            </div>
+                                                            <div class="review-prod-content">
+                                                                <h3>무주스키장 입장권 주간권/야간권</h3>
+                                                                <p class="prod-price-origin-s">43,000원</p>
+                                                                <p class="prod-price-sale-s">30,000원</p>
+                                                            </div>
+                                                        </a>
+                                                    </article>
+                                                </div>
+                                                <div class="review-item">
+                                                    <!-- 리뷰사진 영역 -->
+                                                    <div class="review-item-img">
+                                                        <img src="img/extreme-5497194_1280.jpg" alt="">
+                                                    </div>
+                                                    <!-- 사용자리뷰 -->
+                                                    <div class="review-item-user">
+                                                        <!-- 평점영역 -->
+                                                        <div class="prod-item-score">
+                                                            <div>
+                                                                <ul>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <p class="review-user-name">asdf***</p>
+                                                        <p class="review-user-content">강사분이 친절하시고 자유시간에도 틈틈히 잘 가르쳐주시네요.</p>
+                                                    </div>
+                                                    <!-- 해당 상품 -->
+                                                    <article class="review-prod">
+                                                        <a href="">
+                                                            <div class="review-prod-img">
+                                                                <img src="img/surfing-817968_1280.jpg" alt="">
+                                                            </div>
+                                                            <div class="review-prod-content">
+                                                                <h3>무주스키장 입장권 주간권/야간권</h3>
+                                                                <p class="prod-price-origin-s">43,000원</p>
+                                                                <p class="prod-price-sale-s">30,000원</p>
+                                                            </div>
+                                                        </a>
+                                                    </article>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <!-- 리뷰 2페이지 -->
+                                <li>
+                                    <div class="best-review-list-page">
+                                        <ul>
+                                            <li>
+                                                <!-- 리뷰(영역) -->
+                                                <div class="review-item">
+                                                    <!-- 리뷰사진 영역 -->
+                                                    <div class="review-item-img">
+                                                        <img src="img/extreme-5497194_1280.jpg" alt="">
+                                                    </div>
+                                                    <!-- 사용자리뷰 -->
+                                                    <div class="review-item-user">
+                                                        <!-- 평점영역 -->
+                                                        <div class="prod-item-score">
+                                                            <div>
+                                                                <ul>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <p class="review-user-name">asdf***</p>
+                                                        <p class="review-user-content">강사분이 친절하시고 자유시간에도 틈틈히 잘 가르쳐주시네요.</p>
+                                                    </div>
+                                                    <!-- 해당 상품 -->
+                                                    <article class="review-prod">
+                                                        <a href="">
+                                                            <div class="review-prod-img">
+                                                                <img src="img/surfing-817968_1280.jpg" alt="">
+                                                            </div>
+                                                            <div class="review-prod-content">
+                                                                <h3>무주스키장 입장권 주간권/야간권</h3>
+                                                                <p class="prod-price-origin-s">43,000원</p>
+                                                                <p class="prod-price-sale-s">30,000원</p>
+                                                            </div>
+                                                        </a>
+                                                    </article>
+                                                </div>
+                                                <div class="review-item">
+                                                    <!-- 리뷰사진 영역 -->
+                                                    <div class="review-item-img">
+                                                        <img src="img/extreme-5497194_1280.jpg" alt="">
+                                                    </div>
+                                                    <!-- 사용자리뷰 -->
+                                                    <div class="review-item-user">
+                                                        <!-- 평점영역 -->
+                                                        <div class="prod-item-score">
+                                                            <div>
+                                                                <ul>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <p class="review-user-name">asdf***</p>
+                                                        <p class="review-user-content">강사분이 친절하시고 자유시간에도 틈틈히 잘 가르쳐주시네요.</p>
+                                                    </div>
+                                                    <!-- 해당 상품 -->
+                                                    <article class="review-prod">
+                                                        <a href="">
+                                                            <div class="review-prod-img">
+                                                                <img src="img/surfing-817968_1280.jpg" alt="">
+                                                            </div>
+                                                            <div class="review-prod-content">
+                                                                <h3>무주스키장 입장권 주간권/야간권</h3>
+                                                                <p class="prod-price-origin-s">43,000원</p>
+                                                                <p class="prod-price-sale-s">30,000원</p>
+                                                            </div>
+                                                        </a>
+                                                    </article>
+                                                </div>
+                                                <div class="review-item">
+                                                    <!-- 리뷰사진 영역 -->
+                                                    <div class="review-item-img">
+                                                        <img src="img/extreme-5497194_1280.jpg" alt="">
+                                                    </div>
+                                                    <!-- 사용자리뷰 -->
+                                                    <div class="review-item-user">
+                                                        <!-- 평점영역 -->
+                                                        <div class="prod-item-score">
+                                                            <div>
+                                                                <ul>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <p class="review-user-name">asdf***</p>
+                                                        <p class="review-user-content">강사분이 친절하시고 자유시간에도 틈틈히 잘 가르쳐주시네요.</p>
+                                                    </div>
+                                                    <!-- 해당 상품 -->
+                                                    <article class="review-prod">
+                                                        <a href="">
+                                                            <div class="review-prod-img">
+                                                                <img src="img/surfing-817968_1280.jpg" alt="">
+                                                            </div>
+                                                            <div class="review-prod-content">
+                                                                <h3>무주스키장 입장권 주간권/야간권</h3>
+                                                                <p class="prod-price-origin-s">43,000원</p>
+                                                                <p class="prod-price-sale-s">30,000원</p>
+                                                            </div>
+                                                        </a>
+                                                    </article>
+                                                </div>
+                                                <div class="review-item">
+                                                    <!-- 리뷰사진 영역 -->
+                                                    <div class="review-item-img">
+                                                        <img src="img/extreme-5497194_1280.jpg" alt="">
+                                                    </div>
+                                                    <!-- 사용자리뷰 -->
+                                                    <div class="review-item-user">
+                                                        <!-- 평점영역 -->
+                                                        <div class="prod-item-score">
+                                                            <div>
+                                                                <ul>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                    <li><img src="img/star-solid.svg" alt=""></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <p class="review-user-name">asdf***</p>
+                                                        <p class="review-user-content">강사분이 친절하시고 자유시간에도 틈틈히 잘 가르쳐주시네요.</p>
+                                                    </div>
+                                                    <!-- 해당 상품 -->
+                                                    <article class="review-prod">
+                                                        <a href="">
+                                                            <div class="review-prod-img">
+                                                                <img src="img/surfing-817968_1280.jpg" alt="">
+                                                            </div>
+                                                            <div class="review-prod-content">
+                                                                <h3>무주스키장 입장권 주간권/야간권</h3>
+                                                                <p class="prod-price-origin-s">43,000원</p>
+                                                                <p class="prod-price-sale-s">30,000원</p>
+                                                            </div>
+                                                        </a>
+                                                    </article>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="best-review-list-controller">
+                        <a class="slide-btn-2 trf-horz" href=""><span class="hidden">이전페이지</span></a>
+                        <a class="slide-btn-2" href=""><span class="hidden">다음페이지</span></a>
+                    </div>
+                </div>
+            </div>
+        </-section>
+        <!-- footer -->
+        <footer id="footer-container">
+
+        </footer>
+</body>
+</html>

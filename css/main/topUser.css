@@ -1,0 +1,16 @@
+.top-user {
+    width: 100%;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.top-user > div {
+    line-height: 1.75em;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.top-user > div > * {
+    margin-left: 10px;
+}

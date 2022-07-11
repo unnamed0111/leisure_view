@@ -1,0 +1,12 @@
+@import url(list.css);
+@import url(filter.css);
+@import url(pagingBtn.css);
+
+#main {
+    position: relative;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+#main > .list {
+    padding: 20px 0;
+}

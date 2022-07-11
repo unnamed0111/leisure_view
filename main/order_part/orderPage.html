@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main_common.css">
+    <link rel="stylesheet" href="css/order.css">
+    <title>주문 페이지</title>
+</head>
+<body>
+    <div id="main">
+        <h2>결제</h2>
+        <!-- 인적사항(전달 받을 이메일이나 전화번호 입력) -->
+        <h3>구매자 정보</h3>
+        <table>
+            <tr>
+                <th>이름</th>
+                <td>김포프</td>
+            </tr>
+
+            <tr>
+                <th>이메일</th>
+                <td>kimpope@naver.com</td>
+            </tr>
+        </table>     
+        <!-- 구매 목록 -->
+        <h3>주문 상품 목록</h3>
+        <table class="prod-list">
+            <thead>
+                <tr>
+                    <th>상품명</th>
+                    <th>개수</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <div>
+                            <h4>강원도 평창 스키장 이용권</h4>
+                            <time datetime="2022-10-11">예약일자 : 2022-10-11</time>
+                            <small>옵션 : 성인-주간</small>
+                        </div>
+                    </td>
+                    <td>
+                        1개
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <!-- 결제 관련 내용 -->
+            <!-- 사용할 포인트 | 적립 포인트 | 총 가격 | 결제 방식 -->
+            <!-- 결제 버튼 -->
+        <h3>결제 정보</h3>
+        <form action="">
+            <table>
+                <tr>
+                    <th>총 상품 가격</th>
+                    <td class="money">19,900원</td>
+                </tr>
+                <tr>
+                    <th>사용 포인트</th>
+                    <td>
+                        <input name="point" type="text" value="0">원
+                        (보유 포인트 : <span class="money">10,000원</span>)
+                    </td>
+                </tr>
+                <tr>
+                    <th>총 결제 금액</th>
+                    <td class="money">19,900원</td>
+                </tr>
+                <tr>
+                    <th>결제 방법</th>
+                    <td class="disabled">
+                        <input disabled name="payMethod" type="radio" id="pay1"><label for="pay1">계좌이체</label>
+                        <input disabled name="payMethod" type="radio" id="pay2"><label for="pay2">신용/체크카드</label>
+                    </td>
+                </tr>
+            </table>
+            <button type="submit">결제하기</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,383 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700;900&display=swap');
+
+/* ------------------------------- */
+/* ------------------------------- */
+/* ------------------------------- */
+/* ---------Initializing---------- */
+/* ------------------------------- */
+/* ------------------------------- */
+/* ------------------------------- */
+
+* { font-family: 'Noto Sans KR', sans-serif; }
+body, h1, h2, h3, p, ul { margin: 0; padding: 0; }
+li { list-style: none;}
+a { text-decoration: none; color: black; }
+hr { display: none; }
+.hidden { position: absolute; left:-9999px; }
+.std-width {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* ------------------------------- */
+/* ------------------------------- */
+/* ------------------------------- */
+/* -----------Utility------------- */
+/* ------------------------------- */
+/* ------------------------------- */
+/* ------------------------------- */
+
+/* Shape Editors */
+.align-left {
+    float: left;
+}
+
+.align-right {
+    float: right;
+}
+
+.no-border {
+    border: 0;
+}
+
+.trf-horz {
+    transform: scaleX(-1);
+}
+
+/* Icons */
+.icon-user {
+    background: url(../img/user-solid.svg) no-repeat center center / cover;
+}
+
+.icon-cart {
+    background: url(../img/cart-shopping-solid.svg) no-repeat center center / cover;
+}
+
+.icon-category {
+    background: url(../img/bars-solid.svg) no-repeat center center / cover;
+}
+
+/* Buttons */
+.slide-btn-2 {
+    background-image: url(../img/arrow_btn2.svg);    
+    width: 39px; height: 64px;
+}
+
+.slide-btn-1 {
+    width: 73px; height: 73px;
+    background-image: url(../img/arrow_btn.svg);
+}
+
+/* Typography */
+.section-title {
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 68px;
+    line-height: 36px;
+}
+
+/* ------------------------------- */
+/* ------------------------------- */
+/* ------------------------------- */
+/* -------------Main-------------- */
+/* ------------------------------- */
+/* ------------------------------- */
+/* ------------------------------- */
+
+/* Header */
+#top-header {
+
+}
+
+    /* member-menu */
+#member-menu-container {
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+#member-menu-wrapper {
+    overflow: hidden;
+}
+
+#member-menu-list {
+    overflow: hidden;
+    float: right;
+}
+
+#member-menu-list li {
+    display: block;
+    float: left;
+    margin-left: 16px;
+}
+
+#member-menu-list li a {
+    display: block;
+    line-height: 32px;
+    color: black;
+    opacity: 75%;
+}
+
+    /* customer-menu */
+#customer-menu-container {
+    overflow: hidden;
+}
+
+#customer-menu-container h1 {
+    float: left;
+    margin-top: 14px;
+}
+
+#customer-menu {
+    float: right;
+    margin: 28px 0 20px;
+}
+
+#customer-menu li {
+    float: left;
+}
+
+#searchBox {
+    width: 118px; height: 38px;
+    border-radius: 19px;
+    border: 1px solid #2fa0ff;
+    position: relative;
+    overflow: hidden;
+}
+
+#searchBox input {
+    width: 61px; height: 100%;
+    border: 0;
+    border-radius: 0;
+    position: absolute;
+    left: 38px;
+    padding: 0;
+    color: #0090ff;;
+    font-size: 18px;
+}
+
+#searchBox input::placeholder {
+    color: #b2ddff;
+}
+
+#searchBox input:focus {
+    outline: none;
+}
+
+#searchBox button {
+    width: 38px; height: 38px;
+    border: 0;
+    border-radius: 19px;
+    background-image: url(../img/magnifying-glass-solid.svg);
+    background-color: white;
+    background-size: 50%;
+    background-position: 45% 60%;
+    background-repeat: no-repeat;
+}
+
+#userBtn {
+    display: block;
+    width: 20px; height: 23px;
+    margin: 8px 22px;
+}
+
+#cartBtn {
+    display: block;
+    width: 26px; height: 23px;
+    margin: 8px 0;
+}
+
+/* Navigation */
+#category-container {
+    overflow: hidden;
+    background-color: #0066ff;
+    /* height: 60px; */
+}
+
+#category-nav {
+    float: left;
+}
+
+#category-btn {
+    overflow: hidden;
+    background-color: #0036ff;
+}
+
+#category-logo {
+    float: left;
+    width: 20px; height: 17px;
+    margin: 22px 9px 0 14px;
+}
+
+#category-btn h2 {
+    float: left;
+    color: white;
+    width: 77px;
+    line-height: 60px;
+    font-size: 18px;
+}
+
+#category-btn h2:hover {
+    cursor: pointer;
+}
+
+#category-list {
+    display: none;
+}
+
+#quick-nav {
+    float: left;
+}
+
+#quick-list {
+    overflow: hidden;
+}
+
+#quick-list li {
+    float: left;
+    border-right: 1px solid #5e9eff;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+#quick-list li a {
+    display: block;
+    line-height: 60px;
+    color: white;
+    margin: 0 20px;
+}
+
+/* Production */
+.prod-container {
+    overflow: hidden;
+}
+
+.prod-container > ul > li {
+    margin-bottom: 16px;
+    float: left;
+}
+
+.prod-container > ul > li:not(:last-child) {
+    margin-right: 44px;
+}
+
+.prod-item {
+    position: relative;
+    border-radius: 10px;
+    border: #dddddd 1px solid;
+    box-sizing: border-box;
+    width: 256px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.prod-item-click-area {
+    display: block;
+    width: 100%; height: 100%;
+}
+
+.prod-item-img {
+    overflow: hidden;
+    height: 256px;
+}
+
+.prod-item-img img {
+    height: 100%;
+}
+
+.prod-content {
+    margin: 14px 14px;
+}
+
+.prod-title {
+    height: 44px;
+    overflow: hidden;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-bottom: 14px;
+}
+
+.prod-sale-count {
+    color: red;
+    font-size: 14px;
+    line-height: 14px;
+    height: 14px;
+    margin-bottom: 10px;
+}
+
+.prod-price-origin {
+    font-size: 18px;
+    line-height: 18px;
+    color: #b4b4b4;
+    text-decoration-line: line-through;
+    margin-bottom: 8px;
+}
+
+.prod-price-sale {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.prod-item-score {
+    overflow: hidden;
+}
+
+.prod-item-score li {
+    float: left;
+    height: 18px;
+    overflow: hidden;
+}
+
+.prod-item-score li img {
+    height: 100%;
+    display: block;
+}
+
+.prod-item-score-number {
+    font-size: 12px;
+    opacity: 46%;
+}
+
+.prod-item-fav-btn {
+    position: absolute;
+    bottom: 14px; right: 14px;
+    background-image: url(../img/heart-regular.svg);
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 0;
+    width: 28px; height: 28px;
+    padding: 0;
+}
+
+.prod-item-fav-btn:hover {
+    cursor: pointer;
+    background-image: url(../img/heart-solid.svg)
+}
+
+/* Production-Small */
+.prod-price-origin-s {
+    font-size: 12px;
+    line-height: 12px;
+    color: #b4b4b4;
+    text-decoration-line: line-through;
+}
+
+.prod-price-sale-s {
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    color: black;
+}
+
+/* Footer */
+#footer-container {
+    margin-top: 100px;;
+    height: 200px;
+    background-color: #0090ff;
+}
+
